@@ -15,6 +15,7 @@ app.use(morgan('dev'));
 }
 
 app.use((req, res, next) => {
+    // eslint-disable-next-line no-console
     console.log('Hello from the middleware');
     next();
 });
