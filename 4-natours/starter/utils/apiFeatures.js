@@ -15,7 +15,7 @@ class APIFeatures {
         queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, match => `$${match}`);
           
         this.query = this.query.find(JSON.parse(queryStr))
-        console.log('hitting filter');
+
         return this;
     };
 
@@ -27,7 +27,7 @@ class APIFeatures {
         } else {
             this.query = this.query.sort('-createdAt');
         }
-        console.log('hitting sort');
+
         return this;
     };
 
@@ -38,7 +38,7 @@ class APIFeatures {
         } else  {
             this.query = this.query.select('-__v');
         }
-        console.log('hitting limit');
+
         return this;
     };
 
@@ -48,7 +48,7 @@ class APIFeatures {
         const skip = (page -1) * limit;
 
         this.query = this.query.skip(skip).limit(limit);
-        console.log('hitting paginate');
+
             return this;
 }
 
