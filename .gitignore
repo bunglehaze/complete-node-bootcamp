@@ -291,3 +291,4 @@
 1-node-farm/starter/node_modules/undefsafe/README.md
 1-node-farm/starter/node_modules/undefsafe/.github/workflows/release.yml
 1-node-farm/starter/node_modules/undefsafe/lib/undefsafe.js
+node_modules

@@ -1,3 +1,6 @@
-module.exports = fn => (req, res, next) => {    // eslint was having tantrum at the syntax used in the course and wanted to compress  it.
-    fn(req, res, next).catch(next);
-        };
+// eslint-disable-next-line arrow-body-style
+module.exports = fn => {
+    return (req, res, next) => {    
+    fn(req, res, next).catch(next);    
+    };    
+    };
